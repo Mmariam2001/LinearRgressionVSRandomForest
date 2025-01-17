@@ -1,0 +1,13 @@
+in the code i upload
+its about data rental_info.csv
+figure out how many days a customer will rent a DVD
+i used 2 models linearRegressor & RandomForest 
+after converting the datetime features 
+then Splitting the ['special_features'] column
+then .drop unneed columns 
+then splitting the data into X_train, X_test, y_train, y_test
+I performed lasso Regression (it helps to find the best features)
+then build the LinearRegressor model find out the Mean Sequared Error 
+Then the fun time The RandomForestRegressor Model
+to build a better model i performed CrossValidation: RandomizedSearchCV() to find the best_params_
+used them in the RandomForestRegressor() to get a hieghr mse with 2.4
